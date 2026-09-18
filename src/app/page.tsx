@@ -247,7 +247,7 @@ export default function Home() {
            <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
         </div>
 
-        <motion.div style={{ y: yHero, opacity: opacityHero }} className="relative z-10 w-full max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <motion.div style={{ y: yHero, opacity: opacityHero } as any} className="relative z-10 w-full max-w-7xl px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <div className="flex flex-col items-start z-20 mt-20 lg:mt-0">
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.4 }} className="text-cyan-400 font-semibold tracking-[0.2em] text-xs uppercase mb-6 flex items-center gap-2">
