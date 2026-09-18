@@ -12,6 +12,7 @@ import { FaJava, FaLinkedin } from "react-icons/fa";
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/shanmuga-ramesh-664739231/";
 const MAILTO_LINK = "mailto:shanmugaramesh28@gmail.com?subject=Portfolio%20Inquiry&body=Hello%20Shanmuga%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0A%0ARegards%2C";
+const BASE_PATH = "/Portfolio_Friend";
 
 // CUSTOM CURSOR COMPONENT
 const CustomCursor = () => {
@@ -226,7 +227,7 @@ export default function Home() {
                  </motion.a>
               </div>
               <motion.a 
-                href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+                href={`${BASE_PATH}/resume.pdf`} target="_blank" rel="noopener noreferrer"
                 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.5 }}
                 className="mt-4 px-8 py-4 rounded-full bg-cyan-500 text-black font-bold flex items-center gap-2"
               >
@@ -649,7 +650,7 @@ export default function Home() {
                    <div className="absolute inset-0 bg-slate-200 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
                  </a>
                  <a 
-                   href="/resume.pdf" target="_blank" rel="noopener noreferrer"
+                   href={`${BASE_PATH}/resume.pdf`} target="_blank" rel="noopener noreferrer"
                    className="group px-8 py-4 bg-white/5 border border-white/10 text-white font-semibold rounded-full hover:bg-white/10 hover:border-white/20 transition-all flex items-center justify-center gap-2"
                  >
                    VIEW RESUME
