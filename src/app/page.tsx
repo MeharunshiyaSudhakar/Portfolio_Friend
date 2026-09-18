@@ -4,8 +4,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
 import { 
-  Database, Server, TestTube, LineChart, Mail, 
-  Phone, MapPin, ChevronRight, Code2, Menu, X, Brain, Network, Settings, BarChart, LayoutDashboard, Sheet, XCircle, Award
+  Server, TestTube, ChevronRight, Code2, Menu, X, Brain, Settings, BarChart, LayoutDashboard, Sheet, Award
 } from "lucide-react";
 import { SiPython, SiMysql, SiMongodb, SiSelenium } from "react-icons/si";
 import { FaJava, FaLinkedin } from "react-icons/fa";
@@ -632,7 +631,7 @@ export default function Home() {
               initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}
               className="flex flex-col items-center text-center max-w-4xl mx-auto mb-24"
             >
-              <div className="text-cyan-400 font-semibold tracking-[0.2em] text-xs uppercase mb-6">Let's Connect</div>
+              <div className="text-cyan-400 font-semibold tracking-[0.2em] text-xs uppercase mb-6">Let&apos;s Connect</div>
               <h2 className="text-5xl md:text-7xl font-heading font-black mb-6 tracking-tight text-transparent bg-clip-text bg-gradient-to-b from-white to-slate-400">
                 BUILD SOMETHING<br />RELIABLE.
               </h2>
